@@ -25,6 +25,8 @@ header {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 8px rgba(180, 174, 174, 0.9);
+  position: relative;
+  z-index: 1000;
 }
 
 .logo img {
@@ -32,7 +34,19 @@ header {
   height: auto;
 }
 
+/* زر القائمة للهاتف */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
 /* القائمة */
+.main-nav {
+  display: flex;
+}
+
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -49,14 +63,6 @@ header {
 
 .main-nav ul li a.active {
   text-decoration: underline;
-}
-
-/* زر القائمة للهاتف */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
 }
 
 /* العناوين */
@@ -126,22 +132,52 @@ form button:hover {
 
 /* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
-.main-nav ul {
-    flex-direction: column;
-    background-color: #005baa;
+.menu-toggle {
+    display: block;
+}
+
+.main-nav {
+    display: none;
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
-    display: none;
+    background-color: #005baa;
+    width: 100%;
     padding: 10px;
+    flex-direction: column;
 }
 
-.main-nav.active ul {
+.main-nav.active {
     display: flex;
 }
 
-.menu-toggle {
-    display: block;
+.main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+  h1 {
+    font-size: 22px;
+}
+
+  form input,
+  form textarea {
+    font-size: 15px;
+}
+
+  form button {
+    width: 100%;
 }
 }
