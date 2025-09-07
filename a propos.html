@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="U>TF-8"/>
+  <title>À propos | ITQUANE LOCATION CAR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesite.css"/>
+  <link rel="stylesheet" href="a propos.css"/>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo site web.png" alt="Logo ITQUANE">
+    </div>
+    <div class="menu-toggle">&#9776;</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li> 
+        <li><a href="a propos.html"class="active">À propos</a></li>
+        <li><a href="nos voitures.html">Nos voitures</a></li>
+        <li><a href="booking.html">Réservation</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h1>À propos de ITQUANE LOCATION CAR</h1>
+
+    <h2>Qui sommes-nous</h2>
+    <p>Chez ITQUANE LOCATION CAR, nous vous offrons une expérience de location de voitures pratique, fiable et accessible à tous. Nous sommes une entreprise marocaine spécialisée dans la location de véhicules économiques, visant à faciliter les déplacements quotidiens grâce à des tarifs étudiés et un service professionnel.</p>
+
+    <h2>Notre vision</h2>
+    <p>Être le partenaire de confiance pour les clients à la recherche de véhicules économiques, en combinant qualité de service, transparence et flexibilité.</p>
+
+    <h2>Notre mission</h2>
+    <p>Faciliter les déplacements grâce à une flotte de voitures bien entretenues, un processus de réservation simple, et un accompagnement client attentif à chaque étape.</p>
+  </div>
+
+  <div class="section values">
+    <h2>Nos valeurs</h2>
+    <ul>
+      <li>Économie: Des tarifs accessibles pour tous les budgets.</li>
+      <li>Transparence: Des conditions claires et sans surprises.</li>
+      <li>Fiabilité: Des véhicules contrôlés régulièrement pour votre sécurité.</li>
+      <li>Flexibilité: Des options de location adaptées à chaque besoin.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Engagement de service</h2>
+    <p>Nous garantissons la livraison du véhicule à l’heure et au lieu convenus. En cas d’imprévu (panne ou accident), nous assurons une solution rapide: remplacement du véhicule ou reprogrammation, pour préserver la qualité de votre expérience.</p>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+});
+  </script>
+
+</body>
+</html>
