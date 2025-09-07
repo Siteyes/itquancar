@@ -1,0 +1,4 @@
+User-agent:*
+Allow: /
+
+Sitemap: https://siteyes.github.io/itquancar/sitemap.xml
